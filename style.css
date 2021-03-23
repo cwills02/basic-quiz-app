@@ -1,0 +1,53 @@
+.container {
+  margin: 0 10px;
+}
+
+.question {
+  display: none;
+}
+
+.show-active {
+  display: block;
+  animation: fade 1s;
+}
+
+.answers {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  background-color: green;
+  color: white;
+  padding: 5px;
+  margin-top: 20px;
+  border-radius: 4px;
+  display: none;
+}
+
+.button-active {
+  display: block;
+}
+
+.total-score {
+  display: none;
+}
+
+.total-score-active {
+  display: block;
+}
+
+.submit-quiz {
+  display: none;
+}
+
+.submit-quiz-active {
+  display: block;
+}

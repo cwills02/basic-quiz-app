@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Quiz-App</title>
+</head>
+<body>
+  <div class="container">
+    <div class="question show-active" id="1">
+      <h2>Basic Quiz</h2>
+      <h3>Question 1 of 3</h3>
+      <h5>Which of the following is not a real eCommerce platform?</h5>
+      <div>
+        <div class="answers">
+          <ul>
+            <li>
+              <input type="radio" name="question1" id="answer1">
+              <label for="answer1" class="radio">Shopify</label>
+            </li>
+            <li>
+              <input type="radio" name="question1" id="answer2">
+              <label for="answer2" class="radio">WooCommerce</label>
+            </li>
+            <li>
+              <input class="correct" type="radio" name="question1" id="answer3">
+              <label for="answer3" class="radio">ShopCommerce</label>
+            </li>
+            <li>
+              <input type="radio" name="question1" id="answer4">
+              <label for="answer4" class="radio">BigCommerce</label>
+            </li>
+          </ul>          
+        </div>
+        <button id="1st-button" class="button">Next ></button>
+      </div> 
+    </div>
+    <div class="question" id="2">
+      <h2>Shopify Quiz</h2>
+      <h3>Question 2 of 3</h3>
+      <h5>If Shopify is so good, why are Shopify developers necessary?</h5>
+      <div>
+        <div class="answers">
+          <ul>
+            <li>
+              <input type="radio" id="answer1" name="question2">
+              <label for="answer1" class="radio">
+                To save time on things like store setups and migrations
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="answer2" name="question2">
+              <label for="answer2" class="radio">To extend the limited design options and functionalities of themes with custom code</label>
+            </li>
+            <li>
+              <input type="radio" id="answer3" name="question2">
+              <label for="answer3" class="radio">To provide support with a deep understanding of how the platform works and what its limitations are</label>
+            </li>
+            <li>
+              <input class="correct" type="radio" id="answer4" name="question2">
+              <label for="answer4" class="radio">All of the above</label>
+            </li>
+          </ul>
+        </div>
+        <button class="button">Next ></button>
+      </div>
+    </div>
+    <div class="question" id="3">
+      <h2>Shopify Quiz</h2>
+      <h3>Question 3 of 3</h3>
+      <h5>Which of the following is true about Shopify developers?</h5>
+      <div>
+        <div class="answers">
+          <ul>
+            <li>
+              <input type="radio" id="answer1" name="question3">
+              <label for="answer1" class="radio">
+                They are paid extremely well
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="answer2" name="question3">
+              <label for="answer2" class="radio">There is a high demand for them</label>
+            </li>
+            <li>
+              <input type="radio" id="answer3" name="question3">
+              <label for="answer3" class="radio">
+                They need to know web development, the platform itself, and the liquid template language
+              </label>
+            </li>
+            <li>
+              <input class="correct" type="radio" id="answer4" name="question3">
+              <label for="answer4" class="radio">All of the above</label>
+            </li>
+          </ul>
+        </div>
+        <button diabled class="button">Next ></button>
+        <button class="submit-quiz">Submit</button>
+      </div>
+    </div>
+  </div>
+  <h2 class="total-score">0 out of 3 correct</h2>
+  <script src="index.js"></script>
+</body>
+</html>
