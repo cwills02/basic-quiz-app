@@ -99,3 +99,25 @@ submit.addEventListener('click', function () {
   updateUserScore();
   hideButton()
 })
+
+var backBtns = document.querySelectorAll('.back');
+function prevQuestion() {
+  var questions = [
+    document.getElementById('1'),
+    document.getElementById('2'),
+    document.getElementById('3'),
+  ];
+  if (questions[1].classList.contains('show-active')) {
+    questions[1].classList.remove('show-active');
+    questions[0].classList.add('show-active')
+  } else if (questions[2].classList.contains('show-active')) {
+    questions[2].classList.remove('show-active');
+    questions[1].classList.add('show-active');
+  }
+}
+
+for (var button of backBtns) {
+  button.addEventListener('click', function () {
+    prevQuestion();
+  })
+}
